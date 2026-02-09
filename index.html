@@ -1,35 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>No-AIRBNB</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>No-AIRBNB</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header> 
-        <img src="logo.png" alt="Logotipo"> 
-        <nav> 
-            <ul> 
-                <li><a href="#">Inicio</a></li> 
-                <li><a href="#">Reservaciones</a></li> 
-                <li><a href="#">Servicios</a></li> 
-                <li><a href="#">Contacto</a></li> 
-            </ul> 
-        </nav>
+  <div class="site">
+    <header>
+      <a href="#">
+      <img src="https://github.com/Pechu0/ImitacionDeAirBNB/blob/main/img/NoAirBNBLogo.png?raw=true" alt="Logo" />
+      </a>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="https://github.com/Pechu0/ImitacionDeAirBNB/blob/main/img/NoAirBNBLogoCasa.png?raw=true" alt="LogoCasa">
+              Alojamientos
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://github.com/Pechu0/ImitacionDeAirBNB/blob/main/img/NoAirBNBLogoGlobo.png?raw=true" alt="LogoGlobo">
+              Experiencias
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://github.com/Pechu0/ImitacionDeAirBNB/blob/main/img/NoAirBNBLogoRing.png?raw=true" alt="LogoRing">
+              Servicios
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-right"> 
+        <a href="#" class="host-link">Conviértete en anfitrión</a>
+      </div>
     </header>
-    
-    <section class="listado"> 
-        <article class="propiedad"> 
-            <img src="casa1.jpg" alt="Casa en la playa"> 
-            <h2>Casa en la playa</h2> 
-            <p>$120 por noche</p> 
-        </article> 
-        
-        <article class="propiedad"> 
-            <img src="departamento.jpg" alt="Departamento en la ciudad"> 
-            <h2>Departamento en la ciudad</h2> 
-            <p>$80 por noche</p> 
-        </article> 
-    </section>
+
+    <div class="BarraBusqueda">
+      <input type="BarraBusqueda" placeholder="Destino, fecha o palabra clave" />
+    </div>
+
+    <main class="rows">
+
+      <section>
+        <div class="row-header">Hospédate cerca</div>
+        <div class="row">
+          <article class="card fav">
+            <div class="media" style="background-image:url('casa1.jpg')"></div>
+            <div class="content">
+              <h3>Casa en la playa</h3>
+              <p>2 huéspedes · 1 habitación</p>
+              <div class="meta"><span class="price">$120 / noche</span><span>⭐ 4.8</span></div>
+            </div>
+          </article>
+
+          <article class="card fav">
+            <div class="media" style="background-image:url('departamento.jpg')"></div>
+            <div class="content">
+              <h3>Departamento en la ciudad</h3>
+              <p>4 huéspedes · 2 habitaciones</p>
+              <div class="meta"><span class="price">$80 / noche</span><span>⭐ 4.6</span></div>
+            </div>
+          </article>
+
+          <article class="card fav">
+            <div class="media" style="background-image:url('casa2.jpg')"></div>
+            <div class="content">
+              <h3>Loft moderno</h3>
+              <p>2 huéspedes · 1 habitación</p>
+              <div class="meta"><span class="price">$95 / noche</span><span>⭐ 4.7</span></div>
+            </div>
+          </article>
+
+          <article class="card fav">
+            <div class="media" style="background-image:url('casa3.jpg')"></div>
+            <div class="content">
+              <h3>Habitación privada</h3>
+              <p>1 huésped · 1 habitación</p>
+              <div class="meta"><span class="price">$45 / noche</span><span>⭐ 4.4</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="row-header">Alojamientos populares</div>
+        <div class="row">
+          <article class="card fav">
+            <div class="media" style="background-image:url('casa4.jpg')"></div>
+            <div class="content">
+              <h3>Departamento céntrico</h3>
+              <p>3 huéspedes · 1 habitación</p>
+              <div class="meta"><span class="price">$72 / noche</span><span>⭐ 4.5</span></div>
+            </div>
+          </article>
+
+          <article class="card fav">
+            <div class="media" style="background-image:url('casa5.jpg')"></div>
+            <div class="content">
+              <h3>Condominio con alberca</h3>
+              <p>6 huéspedes · 3 habitaciones</p>
+              <div class="meta"><span class="price">$210 / noche</span><span>⭐ 4.9</span></div>
+            </div>
+          </article>
+
+          <article class="card fav">
+            <div class="media" style="background-image:url('casa6.jpg')"></div>
+            <div class="content">
+              <h3>Casa familiar</h3>
+              <p>8 huéspedes · 4 habitaciones</p>
+              <div class="meta"><span class="price">$180 / noche</span><span>⭐ 4.8</span></div>
+            </div>
+          </article>
+
+          <article class="card fav">
+            <div class="media" style="background-image:url('casa7.jpg')"></div>
+            <div class="content">
+              <h3>Estudio acogedor</h3>
+              <p>2 huéspedes · 1 habitación</p>
+              <div class="meta"><span class="price">$60 / noche</span><span>⭐ 4.3</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="row-header">Disponibles este fin de semana</div>
+        <div class="row">
+          <article class="card fav">
+            <div class="media" style="background-image:url('casa8.jpg')"></div>
+            <div class="content">
+              <h3>Casa con jardín</h3>
+              <p>5 huéspedes · 3 habitaciones</p>
+              <div class="meta"><span class="price">$130 / noche</span><span>⭐ 4.7</span></div>
+            </div>
+          </article>
+
+          <article class="card fav">
+            <div class="media" style="background-image:url('casa9.jpg')"></div>
+            <div class="content">
+              <h3>Villa pequeña</h3>
+              <p>4 huéspedes · 2 habitaciones</p>
+              <div class="meta"><span class="price">$150 / noche</span><span>⭐ 4.8</span></div>
+            </div>
+          </article>
+
+          <article class="card fav">
+            <div class="media" style="background-image:url('casa10.jpg')"></div>
+            <div class="content">
+              <h3>Departamento luminoso</h3>
+              <p>3 huéspedes · 1 habitación</p>
+              <div class="meta"><span class="price">$85 / noche</span><span>⭐ 4.6</span></div>
+            </div>
+          </article>
+
+          <article class="card fav">
+            <div class="media" style="background-image:url('casa11.jpg')"></div>
+            <div class="content">
+              <h3>Loft con terraza</h3>
+              <p>2 huéspedes · 1 habitación</p>
+              <div class="meta"><span class="price">$140 / noche</span><span>⭐ 4.9</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
 </body>
 </html>

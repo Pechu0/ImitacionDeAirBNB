@@ -1,0 +1,189 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f6f7;
+  color: #111;
+}
+
+
+.site {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.nav {
+  justify-self: center;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav img {
+  width: 32px;
+  height: 32px;
+}
+
+header img {
+  height: 36px;
+}
+
+nav ul {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.host-link {
+  padding: 8px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #111;
+}
+
+.host-link:hover {
+  background: #eee;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.host-link {
+  padding: 8px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #111;
+}
+
+.host-link:hover {
+  background: #eee;
+}
+
+.BarraBusqueda {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.BarraBusqueda input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.row-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.media {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  padding: 10px;
+}
+
+.content h3 {
+  font-size: 15px;
+}
+
+.content p {
+  font-size: 13px;
+  color: #555;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* Responsive simple */
+@media (max-width: 900px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
